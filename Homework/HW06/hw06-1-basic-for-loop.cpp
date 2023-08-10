@@ -30,3 +30,32 @@
         [7] Hello World
 
 */
+
+#include<stdio.h>
+
+int main(){
+
+    int ip ;
+
+    printf("INPUT : ");
+    scanf("%d" , &ip);
+
+    if (ip %2 == 0)
+    {
+        for (int i = 0; i <= ip; i++)
+        {
+            printf("(%d) Hello World\n" , i);
+        }
+    }
+    if (ip %2 == 1)
+    {
+        for (int i = 0; i <= ip; i++)
+        {
+            printf("[%d] Hello World\n" , i);
+        }
+        
+    }
+    
+
+    return 0 ;
+}
